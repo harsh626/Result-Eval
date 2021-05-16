@@ -2,9 +2,9 @@
 
 # Result-Evaluation
 
--There was a need of a user friendly system for better viewing the students results for analysis and documentation.
--This system converts the results from pdf format into a pandas dataframe making it easier to work with.
--The dataframe is analysed and the students results can be viewed in various formats as the users needs.
+- There was a need of a user friendly system for better viewing the students results for analysis and documentation.
+- This system converts the results from pdf format into a pandas dataframe making it easier to work with.
+- The dataframe is analysed and the students results can be viewed in various formats as the users needs.
 
 
 
@@ -13,8 +13,11 @@
 This problem has the following dimensions
 
 a. To provide a system for making the task of evaluating Academic Results easier for a teacher.
+
 b. To express academic results in a graphical format which is user friendly and easily understandable.
+
 c. To help Students evaluate their own academic progress.
+
 d. Making it easier to get individual student results along with their analysis of performance.
 
 
