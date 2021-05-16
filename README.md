@@ -1,4 +1,4 @@
-![Logo of the project](./img/aqv_logo.jpg)
+![Logo of the project](./img/result-eval-logo.jpeg)
 
 # Result-Evaluation
 
