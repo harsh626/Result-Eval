@@ -140,6 +140,20 @@ def cleaning(filename):
     for i in range(130):
         Names_list.append(df._get_value(i,'NAME'))
 
+    Result_list = []
+    for i in range(130):
+        Result_list.append(df._get_value(i,'RESULT'))
+
+    PassFail_list = []
+    for i in range(130):
+        PassFail_list.append(df._get_value(i,'PASS_FAIL'))
+
+    passs, fail = 0, 0
+    for j in PassFail_list:
+        if j == 0:
+            fail += 1
+        else:
+            passs += 1  
 
     pd_df = pd.DataFrame(list(zip(
         Names_list   ,
@@ -154,10 +168,12 @@ def cleaning(filename):
         EP_1_TW_list        ,
         EM_TW_list        ,
         BEE_TW_list       ,
-        EC_1_TW_list )),
-        columns =['Names', 'Applied-Mathematics I' , 'Engineering Physics I' , 'Engineering Chemistry I' , 'Engineering Mechanics' , 'Basic Electrical Engineering' , 'Workshop','G.P.A','Applied Mathematics Term Work','Engineering Physics Term Work','Engineering Mechanics Term Work','BEE Term Work','Engineering Chemistry Term Work'])
+        EC_1_TW_list    ,
+        Result_list,
+        PassFail_list)),
+        columns =['Names', 'Applied-Mathematics I' , 'Engineering Physics I' , 
+        'Engineering Chemistry I' , 'Engineering Mechanics' , 'Basic Electrical Engineering' ,
+         'Workshop','G.P.A','Applied Mathematics Term Work','Engineering Physics Term Work',
+         'Engineering Mechanics Term Work','BEE Term Work','Engineering Chemistry Term Work',
+         'Result','PassFail'])
     return pd_df
-
-
-
-
