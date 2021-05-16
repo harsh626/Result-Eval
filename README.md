@@ -22,10 +22,10 @@ d. Making it easier to get individual student results along with their analysis 
 
 
 ### Snapshots of the application 
-<img src="snapshots/snapshot_1.jpg" width="400"/> <img src="snapshots/snapshot_1.jpg" width="400"/>
-<img src="snapshots/snapshot_2.jpg" width="400"/> <img src="snapshots/snapshot_3.jpg" width="400"/> 
-<img src="snapshots/snapshot_4.jpg" width="400"/> <img src="snapshots/snapshot_5.jpg" width="400"/> 
-<img src="snapshots/snapshot_6.jpg" width="400"/> <img src="snapshots/snapshot_7.jpg" width="400"/>
+<img src="img/snapshot_1.jpg" width="400"/> <img src="img/snapshot_1.jpg" width="400"/>
+<img src="img/snapshot_2.jpg" width="400"/> <img src="img/snapshot_3.jpg" width="400"/> 
+<img src="img/snapshot_4.jpg" width="400"/> <img src="img/snapshot_5.jpg" width="400"/> 
+<img src="img/snapshot_6.jpg" width="400"/> <img src="img/snapshot_7.jpg" width="400"/>
 
 
 
