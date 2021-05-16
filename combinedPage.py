@@ -13,12 +13,12 @@ def combinedAnalysis(pd_df):
     #st.write(pd_df.loc[sr_no].to_frame().T)
     st.write(pd_df.loc[sr_no])
 
-    subjects = ['Applied-Mathematics I', 'Engineering Physics I' , 'Engineering Chemistry I' , 'Engineering Mechanics' , 'Basic Electrical Engineering']
-    y = pd_df[sr_no]['Applied-Mathematics I']
+    # subjects = ['Applied-Mathematics I', 'Engineering Physics I' , 'Engineering Chemistry I' , 'Engineering Mechanics' , 'Basic Electrical Engineering']
+    # y = pd_df[sr_no]['Applied-Mathematics I']
 
-    fig = go.Figure([go.Bar(x=subjects, y=y)])
+    # fig = go.Figure([go.Bar(x=subjects, y=y)])
     
-    st.plotly_chart(fig)
+    # st.plotly_chart(fig)
 
     # df = pd.DataFrame(dict(
     #     r=[1, 5, 2, 2, 3],
