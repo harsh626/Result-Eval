@@ -188,7 +188,10 @@ def calculateAgg(pd_df):
 
 def individualAnalysis(pd_df,filename):
     st.title("Individual Analysis")
-    query = st.text_input('Enter a sql query:','select * from `Cleaned Marksheet`')
+    
+    Name = st.text_input('Enter a Name','name')
+    query = 'select*from `Cleaned Marksheet` where Names='+Name
+
     create_database(filename,pd_df)
     individual_df = fire_query(query,filename)
     
