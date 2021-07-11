@@ -7,10 +7,15 @@ from data import create_database,fire_query
 
 # file Uploading Funtion
 
+#def uploadFile():
+#    filename = None
+#    filename = st.text_input('Enter a file path:','Cleaned Marksheet.xlsx')
+#    return filename
+
 def uploadFile():
-    filename = None
-    filename = st.text_input('Enter a file path:','Cleaned Marksheet.xlsx')
-    return filename
+	uploaded_file = st.file_uploader("Choose a file")
+	if uploaded_file is not None:
+		return uploaded_file.name
 
 # Cleaning Funtion
 def cleaning(filename):
