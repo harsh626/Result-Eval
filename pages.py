@@ -159,7 +159,7 @@ def combinedAnalysis(pd_df,pa_df):
             fig.update_layout(title_text=pd_df.columns[count+1])
             st.plotly_chart(fig)
 
-    number = int(st.text_input("Enter the number of top records to be displayed: "))
+    number = int(st.text_input("Enter the number of top records to be displayed: ","10"))
     option = str(st.selectbox(
     'Enter Subject to be selected',
     ('Applied-Mathematics I' , 'Engineering Physics I' , 'Engineering Chemistry I' , 
