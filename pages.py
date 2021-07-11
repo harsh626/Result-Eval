@@ -148,6 +148,17 @@ def combinedAnalysis(pd_df,pa_df):
                     marker=dict(colors=colors, line=dict(color='#000000', width=2)))
     st.plotly_chart(fig)
 
+
+    #Bar Graphs
+    agg_df = calculateAgg(pd_df)
+    for count,column in enumerate(pd_df):
+        if count+1<len(pd_df.columns):
+            fig = go.Figure(data=[go.Bar(x=list(agg_df.columns), y=list(agg_df.iloc[count]))])
+            fig.update_traces(marker_color='rgb(158,202,225)', marker_line_color='rgb(8,48,107)',
+                            marker_line_width=1.5, opacity=0.6)
+            fig.update_layout(title_text=pd_df.columns[count+1])
+            st.plotly_chart(fig)
+
     number = int(st.text_input("Enter the number of top records to be displayed: "))
     option = str(st.selectbox(
     'Enter Subject to be selected',
@@ -166,16 +177,6 @@ def combinedAnalysis(pd_df,pa_df):
         )),
         columns = ['Names',option])
     st.write(sorted_df)
-
-    #Bar Graphs
-    agg_df = calculateAgg(pd_df)
-    for count,column in enumerate(pd_df):
-        if count+1<len(pd_df.columns):
-            fig = go.Figure(data=[go.Bar(x=list(agg_df.columns), y=list(agg_df.iloc[count]))])
-            fig.update_traces(marker_color='rgb(158,202,225)', marker_line_color='rgb(8,48,107)',
-                            marker_line_width=1.5, opacity=0.6)
-            fig.update_layout(title_text=pd_df.columns[count+1])
-            st.plotly_chart(fig)
 
 def calculateAgg(pd_df):
     avg_list=[]
