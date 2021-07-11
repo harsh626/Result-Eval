@@ -7,9 +7,9 @@ import webbrowser
 import matplotlib.pyplot as plt
 from pages import cleaning, uploadFile, combinedAnalysis, individualAnalysis, passfail
 
-st.image('Somaiya Header.png',width=500)
+#st.image('Somaiya Header.png',width=500)
 st.title('Result analysis')
-st.subheader('K. J. Somaiya Institute Of Engineering And Information Technology')
+#st.subheader('K. J. Somaiya Institute Of Engineering And Information Technology')
 st.sidebar.title('Welcome to the Result Evaluation Web app')
 
 filename = uploadFile()
